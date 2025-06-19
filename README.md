@@ -53,10 +53,6 @@ FEATURE HIGHLIGHTS:
 - Save current data (formatted console output)
 - Simple, menu-driven console interface
 
-HOW TO COMPILE & RUN:
-To Compile: g++ 3.cpp -o classroom_system
-
-To Run: ./classroom_system
 
 MENU OPTIONS:
 Add Classroom
