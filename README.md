@@ -1,4 +1,5 @@
 CLASSROOM OCCUPANCY MANAGEMENT SYSTEM
+
 DESCRIPTION:
 A complete, menu-driven C++ console application for managing classrooms, teachers, and students within a building. Developed as an academic Object-Oriented Programming (OOP) project, it provides functionalities for classroom allocations, teacher assignments, student management, room occupancy reporting, and data saving — all through an interactive command-line interface.
 
@@ -43,15 +44,15 @@ Attribute: name
 Array of Classrooms
 Functions for adding classrooms, searching, transfers, displaying summaries, and saving data.
 FEATURE HIGHLIGHTS:
-✔ Add Classrooms with capacity limit
-✔ Assign Teachers to specific classrooms
-✔ Add/Remove Students with duplicate ID checks
-✔ Transfer Students between classrooms
-✔ Search for a Student or Teacher by ID (with room info)
-✔ Display classroom details: occupancy, students, teacher, logs
-✔ Show Building Summary: total students, capacity, occupancy %
-✔ Save current data (formatted console output)
-✔ Simple, menu-driven console interface
+- Add Classrooms with capacity limit
+- Assign Teachers to specific classrooms
+- Add/Remove Students with duplicate ID checks
+- Transfer Students between classrooms
+- Search for a Student or Teacher by ID (with room info)
+- Display classroom details: occupancy, students, teacher, logs
+- Show Building Summary: total students, capacity, occupancy %
+- Save current data (formatted console output)
+- Simple, menu-driven console interface
 
 HOW TO COMPILE & RUN:
 To Compile: g++ 3.cpp -o classroom_system
