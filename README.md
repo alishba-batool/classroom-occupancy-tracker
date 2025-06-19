@@ -1,58 +1,92 @@
-Classroom Occupancy Tracker
-Project Description
-The Classroom Occupancy Tracker is a C++ application designed to manage and monitor classroom occupancy within an academic building. It provides a comprehensive system to track students, teachers, and classroom assignments, offering functionalities such as adding classrooms, assigning teachers, managing student enrollment, transferring students between rooms, and generating occupancy reports. The system uses object-oriented programming principles to model entities like Person, Student, Teacher, Classroom, and Building, ensuring modularity and extensibility.
+CLASSROOM OCCUPANCY MANAGEMENT SYSTEM
+DESCRIPTION:
+A complete, menu-driven C++ console application for managing classrooms, teachers, and students within a building. Developed as an academic Object-Oriented Programming (OOP) project, it provides functionalities for classroom allocations, teacher assignments, student management, room occupancy reporting, and data saving — all through an interactive command-line interface.
 
-Key Features
-Classroom Management:
-Add classrooms with specified room numbers and capacities, up to a maximum of 50 rooms.
+PROJECT MOTIVATION:
+This project aims to:
 
-Teacher Assignment:
-Assign or replace teachers to classrooms, with each teacher having a name, ID, and subject.
+Apply core object-oriented principles: Inheritance, Polymorphism, Encapsulation, Composition.
+Practice dynamic memory management in C++.
+Simulate a real-world classroom management system.
+Build a simple, interactive console application for academic use.
+TECHNOLOGIES USED:
+Programming Language : C++
+Compiler : GCC / g++
+User Interface : Console-based (command-line)
+PROJECT STRUCTURE:
+Project/ │ ├── 3.cpp → Complete source code file └── README.txt → Project documentation (this file)
 
-Student Management:
-Add or remove students (up to 100 per classroom) with details like name, ID, and program, ensuring no duplicate student IDs.
+SYSTEM DESIGN OVERVIEW:
+CLASSES AND RELATIONSHIPS:
+Person (Abstract Base Class)
 
-Occupancy Tracking:
-Display real-time occupancy status with a visual bar representation and percentage for each classroom.
+Attributes: name, id
+Pure virtual function: displayInfo()
+Student (inherits from Person)
 
-Student Transfer:
-Transfer students between classrooms while respecting capacity constraints.
+Attribute: program
+Implements displayInfo()
+Teacher (inherits from Person)
 
-Search Functionality:
-Search for students or teachers by ID across all classrooms.
+Attribute: subject
+Implements displayInfo()
+Classroom
 
-Logging:
-Maintain a log of actions (e.g., adding/removing students, assigning teachers) for each classroom, with a maximum of 500 logs per room.
+Attributes: roomNumber, capacity
+Pointer to Teacher
+Array of Students
+Logs for all activities
+Functions for adding/removing students, assigning teachers, transferring students, displaying details, saving data.
+Building
 
-Data Persistence:
-Save classroom data in a structured format for easy retrieval.
+Attribute: name
+Array of Classrooms
+Functions for adding classrooms, searching, transfers, displaying summaries, and saving data.
+FEATURE HIGHLIGHTS:
+✔ Add Classrooms with capacity limit
+✔ Assign Teachers to specific classrooms
+✔ Add/Remove Students with duplicate ID checks
+✔ Transfer Students between classrooms
+✔ Search for a Student or Teacher by ID (with room info)
+✔ Display classroom details: occupancy, students, teacher, logs
+✔ Show Building Summary: total students, capacity, occupancy %
+✔ Save current data (formatted console output)
+✔ Simple, menu-driven console interface
 
-User Interface:
-Interactive console-based menu for seamless user interaction.
+HOW TO COMPILE & RUN:
+To Compile: g++ 3.cpp -o classroom_system
 
-Technical Details
-Language: C++ (using standard libraries like <iostream>, <string>, <limits>)
-Design: Object-oriented with inheritance (Person as a base class for Student and Teacher) and composition (Classroom and Building classes)
-Data Structures: Arrays for storing students, logs, and classrooms, with defined limits for scalability and memory management
-Error Handling: Input validation for integers and strings, preventing invalid room capacities, duplicate IDs, or full classrooms
-Memory Management: Proper use of dynamic memory for teacher assignments with cleanup in destructors to prevent memory leaks
+To Run: ./classroom_system
 
-Use Cases
-This application is ideal for educational institutions to efficiently manage classroom assignments and track occupancy. It can be extended to integrate with a database or GUI for enhanced functionality.
+MENU OPTIONS:
+Add Classroom
+Assign Teacher
+Add Student
+Remove Student
+Show All Classrooms
+Search Student by ID
+Search Teacher by ID
+Transfer Student
+Show Building Summary
+Save Data
+Exit
+EXAMPLE OPERATIONS:
+Add Classroom: → Enter room number and capacity.
 
-How to Run
-Compile the class-occupancy-tracker.cpp file using a C++ compiler (e.g., g++).
+Assign Teacher: → Enter room number, teacher’s name, ID, subject.
 
-Run the executable to access the interactive menu.
+Add Student: → Enter room number, student’s name, ID, program.
 
-Follow the menu prompts to manage classrooms, teachers, and students.
+Remove Student: → Enter room number and student ID.
 
-Potential Enhancements
-Integration with a file-based or database storage system for persistent data.
+Transfer Student: → Enter student ID, source room number, destination room number.
 
-Graphical user interface (GUI) for a more user-friendly experience.
+Show Summary: → Displays total students, total capacity, occupancy %.
 
-Support for multiple buildings or campuses.
+Save Data: → Outputs all room data in structured format.
 
-Advanced analytics for occupancy trends and teacher workload.
+DATA SAVE FORMAT EXAMPLE:
+Room:101|Capacity:40|Students:12,Ali;14,Sana;|Teacher:22,Mr. Kamran
 
+OCCUPANCY STATUS EXAMPLE:
+Classroom 101 Capacity: 40, Occupied: 20, S
