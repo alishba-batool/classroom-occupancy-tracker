@@ -1,10 +1,10 @@
-Classroom Occupancy Tracker
+###Classroom Occupancy Tracker###
 
-Project Description
+##Project Description##
 
 The Classroom Occupancy Tracker is a C++ application designed to manage and monitor classroom occupancy within an academic building. It provides a comprehensive system to track students, teachers, and classroom assignments, offering functionalities such as adding classrooms, assigning teachers, managing student enrollment, transferring students between rooms, and generating occupancy reports. The system uses object-oriented programming principles to model entities like Person, Student, Teacher, Classroom, and Building, ensuring modularity and extensibility.
 
-Key Features
+##Key Features##
 
 Classroom Management: Add classrooms with specified room numbers and capacities, up to a maximum of 50 rooms.
 
@@ -24,7 +24,7 @@ Data Persistence: Save classroom data in a structured format for easy retrieval.
 
 User Interface: Interactive console-based menu for seamless user interaction.
 
-Technical Details
+##Technical Details##
 
 Language: C++ (using standard libraries like <iostream>, <string>, <limits>)
 
@@ -36,11 +36,11 @@ Error Handling: Input validation for integers and strings, preventing invalid ro
 
 Memory Management: Proper use of dynamic memory for teacher assignments with cleanup in destructors to prevent memory leaks.
 
-Use Cases
+##Use Cases##
 
 This application is ideal for educational institutions to efficiently manage classroom assignments and track occupancy. It can be extended to integrate with a database or GUI for enhanced functionality.
 
-How to Run
+##How to Run##
 
 Compile the class-occupancy-tracker.cpp file using a C++ compiler (e.g., g++).
 
