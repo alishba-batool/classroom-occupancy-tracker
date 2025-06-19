@@ -14,8 +14,7 @@ TECHNOLOGIES USED:
 Programming Language : C++
 Compiler : GCC / g++
 User Interface : Console-based (command-line)
-PROJECT STRUCTURE:
-Project/ │ ├── 3.cpp → Complete source code file └── README.txt → Project documentation (this file)
+
 
 SYSTEM DESIGN OVERVIEW:
 CLASSES AND RELATIONSHIPS:
